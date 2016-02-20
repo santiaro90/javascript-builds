@@ -1,0 +1,11 @@
+{
+  "name": "build-with-javascript",
+  "version": "0.0.1",
+  "description": "Learn to build projects in Javascript with Gulp + Browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test command\""
+  },
+  "author": "Santiago Alvarez Rodriguez",
+  "license": "MIT"
+}
