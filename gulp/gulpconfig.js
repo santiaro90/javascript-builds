@@ -4,8 +4,14 @@ var build = path.resolve('./public');
 
 module.exports = {
     bundle: {
-        entries: client + '/app/main.jsx',
         dest: build + '/scripts',
+        entries: client + '/app/main.jsx',
         name: 'bundle.js'
+    },
+
+    styles: {
+        browsers: ['last 2 versions', '> 5%'],
+        dest: build + '/styles',
+        src: client + '/styles/**/*.scss'
     }
 };
