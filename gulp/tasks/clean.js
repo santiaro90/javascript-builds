@@ -1,8 +1,8 @@
-var config = require('../gulpconfig');
+var config = require('../gulpconfig').build;
 var del = require('del');
 
 function clean() {
-    return del([config.bundle.dest, config.styles.dest]);
+    return del(config.dest + '/*');
 }
 
 module.exports = clean;

@@ -9,6 +9,13 @@ module.exports = {
         name: 'bundle.js'
     },
 
+    build: {
+        dest: build,
+        ignorePath: '/public',
+        index: client + '/index.html',
+        assets: [build + '/scripts/**/*.js', build + '/styles/**/*.css']
+    },
+
     scripts: {
         src: client + '/app/**/*.jsx'
     },
