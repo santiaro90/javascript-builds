@@ -16,8 +16,10 @@ export default class Form extends React.Component {
         return (
             <form action='' onSubmit={this.onSubmit.bind(this)}>
                 <legend>{this.props.title}</legend>
-                <Input ref='input' type='text' placeholder='Text here...' />
-                <Button label='Go!' />
+                <div className='group'>
+                    <Input ref='input' type='text' placeholder='Text here...' />
+                    <Button label='Go!' />
+                </div>
             </form>
         )
     }

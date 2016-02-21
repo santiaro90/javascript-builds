@@ -1,0 +1,16 @@
+@mixin border-radius($size: 0.5rem) {
+    border-radius: $size;
+    background-clip: padding-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

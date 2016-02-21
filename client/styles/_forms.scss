@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+    legend {
+        color: $primary;
+        flex: 1;
+        font-size: $font-medium;
+        text-align: center;
+        text-shadow: 0 0 $size-small lightgrey;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin: $size-small;
+
+        input {
+            box-shadow: 0 0 $size-small $danger;
+            flex: 3;
+        }
+
+        button {
+            @include border-radius($size-small);
+
+            background-color: $success;
+            color: white;
+            flex: 1;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+    }
+}
