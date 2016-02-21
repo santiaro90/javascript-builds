@@ -1,4 +1,4 @@
-var config = require('../gulpconfig').tests;
+var config = require('../gulpconfig').specs;
 var args = require('yargs').argv;
 
 function spec(gulp, plugins) {

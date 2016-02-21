@@ -26,7 +26,7 @@ module.exports = {
         src: client + '/styles/**/*.scss'
     },
 
-    tests: {
+    specs: {
         src: client + '/app/**/*.spec.js'
     }
 };
