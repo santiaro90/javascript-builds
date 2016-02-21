@@ -17,5 +17,9 @@ module.exports = {
         browsers: ['last 2 versions', '> 5%'],
         dest: build + '/styles',
         src: client + '/styles/**/*.scss'
+    },
+
+    tests: {
+        src: client + '/app/**/*.spec.js'
     }
 };
