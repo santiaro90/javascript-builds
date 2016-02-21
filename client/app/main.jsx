@@ -3,5 +3,9 @@ import ReactDom from 'react-dom';
 
 import Form from './components/form.jsx';
 
+import Cypher from './utils/cypher';
+
 let appContainer = document.querySelector('#app');
-ReactDom.render(<Form title='My Cool Form' />, appContainer);
+
+let formTitle = Cypher.cypher('My Cool Form');
+ReactDom.render(<Form title={formTitle} />, appContainer);
