@@ -17,7 +17,7 @@ module.exports = {
     },
 
     scripts: {
-        src: client + '/app/**/*.jsx'
+        src: client + '/app/**/*.js?(x)'
     },
 
     styles: {
