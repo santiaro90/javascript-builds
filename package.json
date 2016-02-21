@@ -4,9 +4,12 @@
   "description": "Learn to build projects in Javascript with Gulp + Browserify",
   "main": "index.js",
   "scripts": {
-    "clean": "./node_modules/.bin/gulp clean",
     "build:dev": "./node_modules/.bin/gulp build || npm run clean",
-    "build:prod": "./node_modules/.bin/gulp build -p || npm run clean"
+    "build:prod": "./node_modules/.bin/gulp build -p || npm run clean",
+    "clean": "./node_modules/.bin/gulp clean",
+    "lint": "./node_modules/.bin/gulp lint",
+    "start": "./node_modules/.bin/gulp watch",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register ./client/app/**/*.spec.js"
   },
   "author": "Santiago Alvarez Rodriguez",
   "license": "MIT",
