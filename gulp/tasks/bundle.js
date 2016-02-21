@@ -7,9 +7,7 @@ var source = require('vinyl-source-stream');
 var config = require('../gulpconfig').bundle;
 
 function bundle(gulp, plugins) {
-    // Passing -d (debug) to command line adds sourcemaps to the bundle
-    // Notice that if enabled, uglify will get rid of sourcemaps
-    config.debug = !!args.d;
+    config.debug = true; // !!args.d;
 
     var bundler = browserify(config).transform(babelify);
 
@@ -20,6 +18,7 @@ function bundle(gulp, plugins) {
         .pipe(source(config.name))
         .pipe(buffer())
         // Passing -p (production) to command line uglifies the bundle
+        // Notice that if enabled, uglify will get rid of sourcemaps
         .pipe(plugins.if(!!args.p, plugins.uglify()))
         .pipe(plugins.rev())
         .pipe(gulp.dest(config.dest));

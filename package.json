@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "./node_modules/.bin/gulp clean",
-    "build:dev": "./node_modules/.bin/gulp build -d || npm run clean",
+    "build:dev": "./node_modules/.bin/gulp build || npm run clean",
     "build:prod": "./node_modules/.bin/gulp build -p || npm run clean"
   },
   "author": "Santiago Alvarez Rodriguez",
