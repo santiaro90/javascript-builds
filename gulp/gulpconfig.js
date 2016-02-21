@@ -9,6 +9,10 @@ module.exports = {
         name: 'bundle.js'
     },
 
+    scripts: {
+        src: client + '/app/**/*.jsx'
+    },
+
     styles: {
         browsers: ['last 2 versions', '> 5%'],
         dest: build + '/styles',

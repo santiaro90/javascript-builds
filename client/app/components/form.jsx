@@ -21,6 +21,6 @@ export default class Form extends React.Component {
                     <Button label='Go!' />
                 </div>
             </form>
-        )
+        );
     }
 }
