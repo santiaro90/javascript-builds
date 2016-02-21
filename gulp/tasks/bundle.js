@@ -21,6 +21,7 @@ function bundle(gulp, plugins) {
         .pipe(buffer())
         // Calling `gulp bundle -p` (production) minifies the bundle
         .pipe(plugins.if(!!args.p, plugins.uglify()))
+        .pipe(plugins.rev())
         .pipe(gulp.dest(config.dest));
 }
 

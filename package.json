@@ -4,7 +4,7 @@
   "description": "Learn to build projects in Javascript with Gulp + Browserify",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test command\""
+    "build": "./node_modules/.bin/gulp build"
   },
   "author": "Santiago Alvarez Rodriguez",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
-    "chai": "^3.5.0",
+    "del": "^2.2.0",
     "eslint": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -23,6 +23,7 @@
     "gulp-if": "^2.0.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-rev": "^7.0.0",
     "gulp-sass": "^2.2.0",
     "gulp-uglify": "^1.5.2",
     "gulp-util": "^3.0.7",

@@ -5,6 +5,7 @@ function styles(gulp, plugins) {
         .pipe(plugins.plumber())
         .pipe(plugins.sass())
         .pipe(plugins.autoprefixer(config.browsers))
+        .pipe(plugins.rev())
         .pipe(gulp.dest(config.dest));
 }
 
